@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -24,9 +25,9 @@ class AuthController extends Controller
         $credentials = [
             'email' => $request->email,
             'password' => $request->password,
-            // fn (Builder $query) => $query->whereHas('roles', function (Builder $query) {
-            //     $query->whereIn('name', ['admin', 'super admin']);
-            // })
+            fn (Builder $query) => $query->whereHas('roles', function (Builder $query) {
+                $query->whereIn('name', ['admin', 'super admin']);
+            })
         ];
 
         if (auth()->attempt($credentials, $remember)) {

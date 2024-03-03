@@ -14,17 +14,15 @@ class UserAdminSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            'username' => 'admin',
             'name' => 'Administrator',
             'email' => 'admin@admin.com',
             'password' => $this->generatePassword(),
-            // 'role' => \App\Enums\RoleEnum::ADMIN,
         ];
 
         $user = User::updateOrCreate(['email' => $data['email']], $data);
 
         // assign to super admin role
-        // $user->assignRole('super admin');
+        $user->assignRole('super admin');
     }
 
     /**

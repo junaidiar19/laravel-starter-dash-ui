@@ -15,7 +15,8 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "php-flasher/flasher-laravel": "^1.15",
-        "silverhand7/laravel-artisan-maker": "^3.0"
+        "silverhand7/laravel-artisan-maker": "^3.0",
+        "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.10",

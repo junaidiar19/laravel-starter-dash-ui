@@ -9,17 +9,11 @@ Route::prefix('/BhajsyTvs75HAu')->name('admin.')->group(function () {
   Route::get('/login', [AuthController::class, 'index'])->name('login');
   Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('authenticate');
 
-  Route::middleware(['auth'])->group(function () {
+  Route::middleware(['auth', 'role:super admin|admin'])->group(function () {
     // logout
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     // dashboard
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
-
-    // test modal
-    Route::get('/modal', function () {
-      sleep(2);
-      return view('pages.admin.dashboard.modal');
-    })->name('modal');
   });
 });
