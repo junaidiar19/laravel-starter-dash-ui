@@ -1,0 +1,240 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f4f6;
+}
+
+.bg-body-2 {
+    background-color: #f1f4f6;
+}
+
+.bg-pattern { 
+    background-image: url('./../../assets/images/background/bg-pattern.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-sm {
+    font-size: small;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fw-semibold {
+  font-weight: 500;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.card-header {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  background-color: white !important;
+  border-bottom: 1px solid var(--bs-gray-300);
+}
+
+.card-footer {
+  border-top: 1px solid var(--bs-gray-300);
+}
+
+.form-control, .form-select, .form-check-label {
+  color: #212529 !important;
+}
+
+.form-control:read-only {
+  background-color: #f4f6f8;
+  opacity: 1;
+}
+
+.custom-search {
+  position: relative;
+}
+
+.custom-search i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 13px;
+  left: 12px;
+  align-items: center;
+  display: flex;
+  color: #b9bdc3;
+}
+
+.custom-search input {
+  padding-left: 2.2rem !important;
+}
+
+.table {
+  color: var(--bs-dark);
+}
+
+.table thead th {
+  color: #070808;
+  font-weight: 600;
+}
+
+.table th, .table td {
+  padding: 0.55rem 1rem !important;
+}
+
+.table-centered td, .table-centered th {
+  vertical-align: middle!important;
+}
+
+.table-striped-columns>:not(caption)>tr>:nth-child(2n), .table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: var(--bs-card-cap-bg);
+  color: #343a40;
+}
+
+.table-striped-columns>:not(caption)>tr>:nth-child(2n), .table-striped>tbody>tr:nth-of-type(odd)>* {
+  color: #22262a;
+}
+
+.navbar-vertical {
+  background-color: #121926;
+}
+
+.navbar-vertical .navbar-heading {
+  color: #626c79;
+}
+
+.navbar-vertical .navbar-nav .nav-item .nav-link {
+  padding: .4rem 0.7rem;
+  margin: 0 1rem;
+  border-radius: 0.3rem;
+  color: #dce1e7;
+}
+
+.navbar-vertical .navbar-nav .nav-item .nav-link.active {
+  background-color: #343A46;
+  color: #fff;
+}
+
+.navbar-vertical .navbar-nav .nav-collapsed .nav-item .nav-link.active {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-vertical .navbar-nav .nav .nav-item .nav-link {
+  padding: .25rem 2.2rem;
+}
+
+.table>thead {
+  background-color: var(--bs-gray-200);
+}
+
+.table.table-rounded {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.table.table-rounded tr th,
+.table.table-rounded tr td {
+  border-right: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.table.table-rounded tr th:first-child,
+.table.table-rounded tr td:first-child {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+.table.table-rounded thead tr th {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+/* top-left border-radius */
+.table.table-rounded thead tr:first-child th:first-child {
+  border-top-left-radius: 0.4rem !important;
+}
+
+/* top-right border-radius */
+.table.table-rounded thead tr:first-child th:last-child {
+  border-top-right-radius: 0.4rem !important;
+}
+
+/* bottom-left border-radius */
+.table.table-rounded tr:last-child td:first-child {
+  border-bottom-left-radius: 0.4rem !important;
+}
+
+/* bottom-right border-radius */
+.table.table-rounded tr:last-child td:last-child {
+  border-bottom-right-radius: 0.4rem !important;
+}
+
+.form-control, .form-select {
+  border-radius: 0.25rem;
+}
+
+.btn {
+  border-radius: 0.25rem;
+}
+
+.btn-ghost:hover
+{
+  background-color: var(--bs-gray-300);
+}
+
+.btn-ghost:focus
+{
+  border: 1px solid var(--bs-gray-300) !important;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.datepicker {
+  padding: .5rem 1rem !important;
+}
+
+.dropify-wrapper .dropify-message p {
+  font-size: 20px !important;
+}
+
+.badge-warning-soft {
+  background-color: rgba(255,193,7,.1);
+  color: #f59e0b;
+}
+
+.badge-success-soft {
+  background-color: rgba(25,135,84,.1);
+  color: #198754;
+}
+
+.badge-danger-soft {
+  background-color: rgba(220,53,69,.1);
+  color: #dc3545;
+}
+
+.badge-primary-soft {
+  background-color: rgba(98,75,255,.1);
+  color: #624bff;
+}
+
+.badge-info-soft {
+  background-color: rgba(13,202,240,.1);
+  color: #0dcaf0;
+}
+
+.badge-dark-soft {
+  background-color: rgba(30,41,59,.1);
+  color: #1e293b;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
