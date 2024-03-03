@@ -15,11 +15,5 @@ Route::prefix('/BhajsyTvs75HAu')->name('admin.')->group(function () {
 
     // dashboard
     Route::get('/dashboard', DashboardController::class)->name('dashboard');
-
-    // test modal
-    Route::get('/modal', function () {
-      sleep(2);
-      return view('pages.admin.dashboard.modal');
-    })->name('modal');
   });
 });
