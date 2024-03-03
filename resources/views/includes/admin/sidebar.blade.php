@@ -17,8 +17,8 @@
                 <div class="navbar-heading">Menu</div>
             </li>
             <!-- Nav item -->
-            <li class="nav-item">
-                <a class="nav-link has-arrow  collapsed" href="#!" data-bs-toggle="collapse"
+            <li class="nav-item nav-collapsed">
+                <a class="nav-link has-arrow collapsed" href="#!" data-bs-toggle="collapse"
                     data-bs-target="#navPages" aria-expanded="false" aria-controls="navPages">
                     <i data-feather="layers" class="nav-icon icon-xs me-2">
                     </i> Pages
@@ -26,27 +26,27 @@
                 <div id="navPages" class="collapse " data-bs-parent="#sideNavbar">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link " href="./pages/profile.html">
+                            <a class="nav-link" href="#!">
                                 Profile
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link has-arrow   " href="./pages/settings.html">
+                            <a class="nav-link" href="#!">
                                 Settings
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./pages/billing.html">
+                            <a class="nav-link" href="#!">
                                 Billing
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./pages/pricing.html">
+                            <a class="nav-link" href="#!">
                                 Pricing
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./pages/404-error.html">
+                            <a class="nav-link" href="#!">
                                 404 Error
                             </a>
                         </li>
